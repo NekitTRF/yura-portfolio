@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Юра — Портфолио разработчика</title>
+<meta name="description" content="Портфолио Юры — разработчика из Коломны. Python, JavaScript, C++. Проекты: Alpha Browser, Ten Assistant, боты для Telegram. Истории и контакты.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Юра — Портфолио разработчика">
+<meta property="og:description" content="Python, JavaScript, C++. Проекты: Alpha Browser, Ten Assistant, Telegram-боты. Истории из жизни.">
+<meta property="og:image" content="https://yura-dev.netlify.app/images/og-preview.jpg">
+<meta property="og:url" content="https://yura-dev.netlify.app/">
+<meta property="og:site_name" content="YURA_DEV">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Юра — Портфолио разработчика">
+<meta name="twitter:description" content="Python, JavaScript, C++. Проекты и истории.">
+<meta name="twitter:image" content="https://yura-dev.netlify.app/images/og-preview.jpg">
+<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="manifest" href="images/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(113225520, "init", {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer"});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/113225520" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+
+
+
+<header>
+  <a href="index.html" class="logo">YURA<span>_DEV</span></a>
+  <nav id="mainNav">
+    <a href="index.html" class="nav-item active" data-i18n="nav.home">Главная</a>
+    <div class="nav-item">
+      <a href="projects.html" class="nav-link" data-i18n="nav.projects">Проекты</a>
+      <div class="dropdown">
+        <a href="project-1.html" data-i18n="project.1">Alpha Browser</a>
+        <a href="project-2.html" data-i18n="project.2">Ten Assistant</a>
+        <a href="project-3.html" data-i18n="project.3">Marketplace Simulator</a>
+        <a href="project-4.html" data-i18n="project.4">AI Auto-Responder Bot</a>
+        <a href="project-5.html" data-i18n="project.5">Physics Tests</a>
+        <a href="project-6.html" data-i18n="project.6">Telegram Chat Analyzer</a>
+        <a href="project-7.html" data-i18n="project.7">Telegram Channel Bots</a>
+        <a href="project-8.html" data-i18n="project.8">Portfolio Website</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="stories.html" class="nav-link" data-i18n="nav.stories">Истории</a>
+      <div class="dropdown">
+        <a href="story-1.html" data-i18n="story.1">Первая попытка</a>
+        <a href="story-2.html" data-i18n="story.2">Империя, которая не выросла</a>
+        <a href="story-3.html" data-i18n="story.3">2025 год. Мой путь в колледж</a>
+        <a href="story-4.html" data-i18n="story.4">Почему я сделал Альфу</a>
+      </div>
+    </div>
+    <a href="gallery.html" class="nav-item" data-i18n="nav.gallery">Галерея</a>
+    <a href="about.html" class="nav-item" data-i18n="nav.about">Обо мне</a>
+    <a href="contact.html" class="nav-item" data-i18n="nav.contact">Контакты</a>
+  </nav>
+<div class="nav-actions">
+  <button class="icon-btn" id="themeToggle" title="Сменить тему">☾</button>
+  <button class="icon-btn" id="langToggle" title="Сменить язык">RU</button>
+  <button class="icon-btn" id="settingsBtn" title="Настройки">⚙</button>
+  <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+</div>
+</header>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="badges reveal">
+      <span class="badge" data-i18n="hero.available">● Доступен для проектов</span>
+      <span class="badge" data-i18n="hero.city">📍 Коломна, Россия</span>
+      <span class="badge" data-i18n="hero.stack">💻 Python · JS · C++</span>
+    </div>
+    <h1 class="reveal d-1"><span data-i18n="hero.greeting">Привет, я</span> <span data-i18n="hero.name">Юра</span></h1>
+    <p class="reveal d-2" data-i18n="hero.desc">Разработчик из Коломны. Пишу на Python, JavaScript и C++. Учусь в Аграрном колледже им. Н. Т. Козлова. Собираю проекты и записываю истории.</p>
+    <div class="quote reveal d-3" data-i18n="hero.quote">«Всему своё время»</div>
+    <div class="btn-group reveal d-4">
+      <a href="projects.html" class="btn" data-i18n="hero.btn.projects">Смотреть работы</a>
+      <a href="contact.html" class="btn btn-ghost" data-i18n="hero.btn.contact">Связаться</a>
+    </div>
+  </div>
+<div class="hero-right reveal d-2">
+  <img src="images/avatar-portrait.jpg" alt="Юра — разработчик из Коломны">
+</div>
+</section>
+
+<section class="section">
+  <div class="section-head reveal">
+    <h2><span data-i18n="section.works">Мои</span> <span data-i18n="section.works.accent">работы</span></h2>
+    <a href="projects.html" class="all" data-i18n="section.works.all">все проекты →</a>
+  </div>
+
+  <a href="project-1.html" class="work reveal d-1">
+<div class="work-thumb">
+  <img src="images/works/work-01.jpg" alt="Alpha Browser">
+</div>
+    <div class="work-info">
+      <div class="work-cat" data-i18n="work.p1.cat">Electron · JS</div>
+      <h3 data-i18n="work.p1.title">Alpha Browser</h3>
+      <p data-i18n="work.p1.desc">Свой браузер на Electron: вкладки, история поиска, загрузки, кастомизация интерфейса. Полностью под моим контролем — ничего не сливает.</p>
+      <span class="work-link" data-i18n="work.more">Подробнее</span>
+    </div>
+  </a>
+
+  <a href="project-2.html" class="work reveal d-2">
+<div class="work-thumb">
+  <img src="images/works/work-02.jpg" alt="Ten Assistant">
+</div>
+    <div class="work-info">
+      <div class="work-cat" data-i18n="work.p2.cat">Python · AI</div>
+      <h3 data-i18n="work.p2.title">Ten Assistant</h3>
+      <p data-i18n="work.p2.desc">Настольный помощник с локальным ИИ: открывает приложения, работает с папками, пишет в Telegram от лица бота. Помнит контекст, модель можно заменить.</p>
+      <span class="work-link" data-i18n="work.more">Подробнее</span>
+    </div>
+  </a>
+
+  <a href="project-3.html" class="work reveal d-3">
+<div class="work-thumb">
+  <img src="images/works/work-03.jpg" alt="Marketplace Simulator">
+</div>
+    <div class="work-info">
+      <div class="work-cat" data-i18n="work.p3.cat">HTML · CSS · JS</div>
+      <h3 data-i18n="work.p3.title">Marketplace Simulator</h3>
+      <p data-i18n="work.p3.desc">Веб-сайт в стиле DNS: каталог товаров, корзина, регистрация и вход с паролем. Полноценный интернет-магазин — только для себя.</p>
+      <span class="work-link" data-i18n="work.more">Подробнее</span>
+    </div>
+  </a>
+</section>
+
+<section class="section">
+
+  <div class="terminal-snake-row reveal">
+    <div class="terminal-wrap">
+      <div class="terminal">
+        <div class="term-bar">
+          <div class="term-dot r"></div>
+          <div class="term-dot y"></div>
+          <div class="term-dot g"></div>
+          <div class="term-title">yura@kolomna: ~/portfolio</div>
+        </div>
+        <div class="term-stage" id="term-stage">
+          <div id="term-lines"></div>
+          <input id="term-input" type="text" data-i18n-placeholder="term.placeholder" placeholder="> напиши что-нибудь..." autocomplete="off">
+        </div>
+        <div class="term-controls">
+          <div class="term-status" id="term-status" data-i18n="term.status">$ печатай что хочешь</div>
+          <div class="term-btns">
+            <button class="term-btn reset" id="btn-reset" data-i18n="term.reset">СБРОС</button>
+            <button class="term-btn" id="btn-phys" data-i18n="term.tear" disabled>ОТОРВАТЬ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="snake-wrap">
+      <div class="snake-info">
+        <span data-i18n="snake.score">Счёт:</span> <span id="snakeScore">0</span>
+      </div>
+      <canvas id="snakeCanvas"></canvas>
+      <div class="snake-controls">
+        <button class="snake-btn" id="snakeStart" data-i18n="snake.start">Заново</button>
+        <button class="snake-btn" id="snakePause">⏸</button>
+      </div>
+      <div class="snake-hint" data-i18n="snake.hint">Управление: стрелки</div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="section-head reveal">
+    <h2><span data-i18n="section.stories">Мои</span> <span data-i18n="section.stories.accent">истории</span></h2>
+    <a href="stories.html" class="all" data-i18n="section.stories.all">все истории →</a>
+  </div>
+
+  <div class="stories-grid">
+  <a href="story-1.html" class="story-card reveal d-1">
+    <div class="story-img">
+      <img src="images/stories/story-01.jpg" alt="Первая попытка">
+    </div>
+    <div class="story-body">
+      <div class="story-date" data-i18n="story.prev.1.date">2023-2024</div>
+      <h3 data-i18n="story.prev.1.title">Первая попытка</h3>
+      <p data-i18n="story.prev.1.desc">Как я пытался освоить Unity, забросил, вернулся к Python и написал свой первый скрипт.</p>
+    </div>
+  </a>
+
+  <a href="story-2.html" class="story-card reveal d-2">
+    <div class="story-img">
+      <img src="images/stories/story-02.jpg" alt="Империя, которая не выросла">
+    </div>
+    <div class="story-body">
+      <div class="story-date" data-i18n="story.prev.2.date">Октябрь 2025</div>
+      <h3 data-i18n="story.prev.2.title">Империя, которая не выросла</h3>
+      <p data-i18n="story.prev.2.desc">5 Telegram-каналов с автопостингом через локальный ИИ. Каналы не взлетели.</p>
+    </div>
+  </a>
+
+  <a href="story-3.html" class="story-card reveal d-3">
+    <div class="story-img">
+      <img src="images/stories/story-03.jpg" alt="2025 год. Мой путь в колледж">
+    </div>
+    <div class="story-body">
+      <div class="story-date" data-i18n="story.prev.3.date">2025</div>
+      <h3 data-i18n="story.prev.3.title">2025 год. Мой путь в колледж</h3>
+      <p data-i18n="story.prev.3.desc">Как я поступил в Аграрный колледж, что там изучаю и почему это связано с программированием.</p>
+    </div>
+  </a>
+</div>
+</section>
+
+<section class="section">
+  <div class="section-head reveal">
+    <h2><span data-i18n="section.skills">Мои</span> <span data-i18n="section.skills.accent">навыки</span></h2>
+  </div>
+
+  <div class="skills-grid reveal">
+    <div class="skill">
+      <div class="skill-head"><span class="skill-name">Python</span><span class="skill-percent" data-target="90">0%</span></div>
+      <div class="skill-bar"><div class="skill-fill" data-percent="90"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-head"><span class="skill-name">JavaScript</span><span class="skill-percent" data-target="80">0%</span></div>
+      <div class="skill-bar"><div class="skill-fill" data-percent="80"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-head"><span class="skill-name">HTML / CSS</span><span class="skill-percent" data-target="85">0%</span></div>
+      <div class="skill-bar"><div class="skill-fill" data-percent="85"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-head"><span class="skill-name">C++</span><span class="skill-percent" data-target="65">0%</span></div>
+      <div class="skill-bar"><div class="skill-fill" data-percent="65"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-head"><span class="skill-name">Git</span><span class="skill-percent" data-target="70">0%</span></div>
+      <div class="skill-bar"><div class="skill-fill" data-percent="70"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-head"><span class="skill-name">Linux</span><span class="skill-percent" data-target="60">0%</span></div>
+      <div class="skill-bar"><div class="skill-fill" data-percent="60"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-head"><span class="skill-name">Electron</span><span class="skill-percent" data-target="65">0%</span></div>
+      <div class="skill-bar"><div class="skill-fill" data-percent="65"></div></div>
+    </div>
+    <div class="skill">
+      <div class="skill-head"><span class="skill-name">AI / ML</span><span class="skill-percent" data-target="70">0%</span></div>
+      <div class="skill-bar"><div class="skill-fill" data-percent="70"></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head reveal">
+    <h2><span data-i18n="section.tools">Что я</span> <span data-i18n="section.tools.accent">использую</span></h2>
+  </div>
+
+  <div class="tools-grid reveal">
+    <div class="tool-card">
+      <div class="tool-icon">&lt;/&gt;</div>
+      <div class="tool-name">VS Code</div>
+      <div class="tool-desc" data-i18n="tool.vscode">Основной редактор</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">⎇</div>
+      <div class="tool-name">Git</div>
+      <div class="tool-desc" data-i18n="tool.git">Контроль версий</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">AI</div>
+      <div class="tool-name">Ollama</div>
+      <div class="tool-desc" data-i18n="tool.ollama">Локальные ИИ</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">◇</div>
+      <div class="tool-name">Figma</div>
+      <div class="tool-desc" data-i18n="tool.figma">Дизайн</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">◈</div>
+      <div class="tool-name">Photoshop</div>
+      <div class="tool-desc" data-i18n="tool.photoshop">Обработка</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">JS</div>
+      <div class="tool-name">Node.js</div>
+      <div class="tool-desc" data-i18n="tool.node">Серверный JS</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">PY</div>
+      <div class="tool-name">Python</div>
+      <div class="tool-desc" data-i18n="tool.python">Скрипты и боты</div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon">✈</div>
+      <div class="tool-name">Telegram API</div>
+      <div class="tool-desc" data-i18n="tool.telegram">Боты</div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="section-head reveal">
+    <h2><span data-i18n="section.stats">Обо мне в</span> <span data-i18n="section.stats.accent">цифрах</span></h2>
+  </div>
+  <div class="stats reveal">
+    <div class="stat">
+      <div class="stat-num">08</div>
+      <div class="stat-lbl" data-i18n="stats.projects">Проектов</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">04</div>
+      <div class="stat-lbl" data-i18n="stats.stories">Истории</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">03</div>
+      <div class="stat-lbl" data-i18n="stats.langs">Языка</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">2024</div>
+      <div class="stat-lbl" data-i18n="stats.start">Год старта</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="now-working reveal">
+    <div>
+      <div class="nw-cat" data-i18n="now.cat">● Сейчас работаю над</div>
+      <h3 data-i18n="now.title">Сайт-портфолио (этот сайт)</h3>
+      <p data-i18n="now.desc">Собираю личный сайт-портфолио с интерактивами, тёмной темой и переключателем языка. Делаю всё сам: HTML, CSS, JS.</p>
+      <div class="nw-progress"><div class="nw-fill" data-percent="85"></div></div>
+      <div class="nw-percent">0%</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head reveal">
+    <h2><span data-i18n="section.reviews">Что обо мне</span> <span data-i18n="section.reviews.accent">говорят</span></h2>
+  </div>
+  <div class="reviews-wrap reveal">
+  <div class="reviews-track" id="reviewsTrack">
+    <div class="review">
+      <div class="review-text" data-i18n="rev.1.text">«Юра — нормальный студент. Работы сдаёт вовремя, не прогуливает. Математику понимает, не просто зубрит. Иногда слишком серьёзный — но это скорее плюс.»</div>
+      <div class="review-author">
+        <div class="review-avatar">О</div>
+        <div><div class="review-name" data-i18n="rev.1.name">Ольга</div><div class="review-role" data-i18n="rev.1.role">Преподаватель колледжа</div></div>
+      </div>
+    </div>
+    <div class="review">
+      <div class="review-text" data-i18n="rev.2.text">«С Юрой мы учимся вместе уже второй курс. Он тот самый человек, который никогда не прогуливает пары и всегда в курсе, что задали. Если я что-то пропустил — иду к нему. Уважаю его за дисциплину»</div>
+      <div class="review-author">
+        <div class="review-avatar">Т</div>
+        <div><div class="review-name" data-i18n="rev.2.name">Тимофей</div><div class="review-role" data-i18n="rev.2.role">Одногруппник</div></div>
+      </div>
+    </div>
+    <div class="review">
+      <div class="review-text" data-i18n="rev.3.text">«Юра — ответственный и самостоятельный студент. За два года обучения ни одного пропуска без уважительной причины. Всегда выполняет то, что обещает — иногда даже больше, чем нужно. У него есть чёткая цель и план на будущее, что редкость для его возраста. Единственное — иногда он берёт на себя слишком много, из-за чего выгорает. Но это проходит. Рекомендую как надёжного и целеустремлённого человека.»</div>
+      <div class="review-author">
+        <div class="review-avatar">Р</div>
+        <div><div class="review-name" data-i18n="rev.3.name">Регина</div><div class="review-role" data-i18n="rev.3.role">Куратор</div></div>
+      </div>
+    </div>
+    <div class="review">
+      <div class="review-text" data-i18n="rev.4.text">«Работал с ним над портфолио. Если что-то не работает — не бросает, копает до конца. Может часами сидеть над одной строчкой. Упрямый. Мне нравится.»</div>
+      <div class="review-author">
+        <div class="review-avatar">A</div>
+        <div><div class="review-name" data-i18n="rev.4.name">ARIA</div><div class="review-role" data-i18n="rev.4.role">Наставник</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-controls">
+<button class="carousel-btn prev" aria-label="Назад">‹</button>
+<button class="carousel-btn next" aria-label="Вперёд">›</button>
+  </div>
+</div>
+</section>
+
+<section class="section">
+  <div class="section-head reveal">
+    <h2><span data-i18n="section.faq">Частые</span> <span data-i18n="section.faq.accent">вопросы</span></h2>
+  </div>
+  <div class="faq reveal">
+    <div class="faq-item">
+      <div class="faq-q"><span data-i18n="faq.q1">Кто ты и чем занимаешься?</span> <span class="faq-icon">+</span></div>
+      <div class="faq-a" data-i18n="faq.a1">Я Юра, разработчик из Коломны. Пишу на Python, JavaScript и C++. Учусь в Аграрном колледже им. Н. Т. Козлова. Делаю проекты разного уровня: от ботов до браузеров.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span data-i18n="faq.q2">Какие языки программирования знаешь?</span> <span class="faq-icon">+</span></div>
+      <div class="faq-a" data-i18n="faq.a2">Основные — Python, JavaScript и C++. Дополнительно: HTML/CSS, Git, Linux, Electron. Работаю с локальными ИИ-моделями. Постоянно учусь новому.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span data-i18n="faq.q3">Можно заказать у тебя проект?</span> <span class="faq-icon">+</span></div>
+      <div class="faq-a" data-i18n="faq.a3">Да, я открыт к предложениям. Напиши в Telegram (@ArishaBii) или на email — обсудим задачу, сроки и стоимость.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span data-i18n="faq.q4">Как с тобой связаться?</span> <span class="faq-icon">+</span></div>
+      <div class="faq-a" data-i18n="faq.a4">Telegram (@ArishaBii), GitHub (NekitTRF) или email (nekit19980@gmail.com). Все контакты — на странице «Контакты» или в футере.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span data-i18n="faq.q5">Ты работаешь только в Коломне?</span> <span class="faq-icon">+</span></div>
+      <div class="faq-a" data-i18n="faq.a5">Нет, я работаю удалённо. Могу делать проекты для заказчиков из любого города.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q"><span data-i18n="faq.q6">Сколько стоит проект?</span> <span class="faq-icon">+</span></div>
+      <div class="faq-a" data-i18n="faq.a6">Зависит от задачи. Напиши, что нужно — обсудим детали и договоримся. Небольшие проекты делаю быстро.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head reveal">
+    <h2><span data-i18n="section.timeline">Мой</span> <span data-i18n="section.timeline.accent">путь</span></h2>
+  </div>
+  <div class="timeline reveal">
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year" data-i18n="tl.2024.year">2024</div>
+      <div class="tl-text" data-i18n="tl.2024.text"><b>Начал программировать.</b> Первые скрипты на Python, первые ошибки, первое «оно работает!».</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year" data-i18n="tl.2025a.year">2025</div>
+      <div class="tl-text" data-i18n="tl.2025a.text"><b>Поступил в Аграрный колледж им. Н. Т. Козлова.</b> Там же — первый серьёзный проект и знакомство с C++.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year" data-i18n="tl.2025b.year">2025</div>
+      <div class="tl-text" data-i18n="tl.2025b.text"><b>Сделал боты для Telegram-каналов.</b> 5 тематик, локальный ИИ, автопостинг. Первый опыт реальной автоматизации.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year" data-i18n="tl.2026.year">2026</div>
+      <div class="tl-text" data-i18n="tl.2026.text"><b>Год проектов.</b> Браузер Альфа, настольный помощник Ten, симулятор маркетплейса, аналитика чатов. И этот сайт.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-year" data-i18n="tl.now.year">Сейчас</div>
+      <div class="tl-text" data-i18n="tl.now.text"><b>Продолжаю делать.</b> Пишу код, учусь новому, собираю портфолио. Дальше — больше.</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head reveal">
+    <h2><span data-i18n="section.gallery.accent">Галерея</span></h2>
+    <a href="gallery.html" class="all" data-i18n="section.gallery.all">вся галерея →</a>
+  </div>
+<div class="gallery-grid reveal">
+  <div class="gallery-item">
+    <img src="images/gallery/gallery-01.jpg" alt="Галерея 1">
+  </div>
+  <div class="gallery-item">
+    <img src="images/gallery/gallery-02.jpg" alt="Галерея 2">
+  </div>
+  <div class="gallery-item">
+    <img src="images/gallery/gallery-03.jpg" alt="Галерея 3">
+  </div>
+  <div class="gallery-item">
+    <img src="images/gallery/gallery-04.jpg" alt="Галерея 4">
+  </div>
+  <div class="gallery-item">
+    <img src="images/gallery/gallery-05.jpg" alt="Галерея 5">
+  </div>
+  <div class="gallery-item">
+    <img src="images/gallery/gallery-06.jpg" alt="Галерея 6">
+  </div>
+</div>
+</section>
+
+<section class="section" id="contact">
+  <div class="section-head reveal">
+    <h2><span data-i18n="section.contact">Связаться</span> <span data-i18n="section.contact.accent">со мной</span></h2>
+  </div>
+  <div class="contact-grid reveal">
+    <div class="contact-links">
+      <a href="https://t.me/ArishaBii" target="_blank" class="contact-link">
+        <div class="contact-icon"><img src="images/icons/telegram.svg" alt="Telegram"></div>
+        <div class="contact-info">
+          <b data-i18n="contact.telegram">Telegram</b>
+          <span data-i18n="contact.telegram.desc">@ArishaBii — самый быстрый способ</span>
+        </div>
+      </a>
+      <a href="https://github.com/NekitTRF" target="_blank" class="contact-link">
+        <div class="contact-icon"><img src="images/icons/github.svg" alt="GitHub"></div>
+        <div class="contact-info">
+          <b data-i18n="contact.github">GitHub</b>
+          <span data-i18n="contact.github.desc">github.com/NekitTRF — мои проекты</span>
+        </div>
+      </a>
+      <a href="#" class="contact-link" data-copy="nekit19980@gmail.com">
+  <div class="contact-icon">
+    <img src="images/icons/email.svg" alt="Email">
+  </div>
+  <div class="contact-info">
+    <b data-i18n="contact.email">Email</b>
+    <span data-i18n="contact.email.desc">nekit19980@gmail.com — для серьёзных дел</span>
+  </div>
+</a>
+      <a href="https://yandex.ru/maps/?text=Коломна" target="_blank" class="contact-link">
+        <div class="contact-icon"><img src="images/icons/location.svg" alt="Локация"></div>
+        <div class="contact-info">
+          <b data-i18n="contact.location">Локация</b>
+          <span data-i18n="contact.location.desc">Коломна, Россия</span>
+        </div>
+      </a>
+    </div>
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/maenvdjy" method="POST">
+  <div class="form-group">
+    <label for="name" data-i18n="form.name">Имя</label>
+    <input type="text" id="name" name="name" data-i18n-placeholder="form.name.placeholder" placeholder="Как тебя зовут?" required>
+  </div>
+  <div class="form-group">
+    <label for="email" data-i18n="form.email">Email</label>
+    <input type="email" id="email" name="email" data-i18n-placeholder="form.email.placeholder" placeholder="example@mail.com" required>
+  </div>
+  <div class="form-group">
+    <label for="message" data-i18n="form.message">Сообщение</label>
+    <textarea id="message" name="message" data-i18n-placeholder="form.message.placeholder" placeholder="Опиши задачу или просто напиши привет..." required></textarea>
+  </div>
+  <button type="submit" class="btn" id="submitBtn" data-i18n="form.send">Отправить сообщение</button>
+  <div class="form-status" id="formStatus"></div>
+</form>
+  </div>
+</section>
+<div class="settings-panel" id="settingsPanel">
+  <div class="panel-head">
+    <div class="panel-title">⚙ НАСТРОЙКИ</div>
+    <button class="panel-close" id="closeSettings">✕</button>
+  </div>
+
+<div class="section-label">🎨 Курсор</div>
+<div class="options-grid cols-2">
+  <button class="opt" data-cursor="1">Точка + кольцо</button>
+  <button class="opt" data-cursor="2">Стрелка</button>
+  <button class="opt" data-cursor="3">Свечение</button>
+  <button class="opt" data-cursor="4">Прицел</button>
+  <button class="opt" data-cursor="off" style="grid-column: 1 / -1;">✕ Обычный</button>
+</div>
+
+  <div class="section-label">✨ Эффекты</div>
+  <div class="toggle-row">
+    <span>Свечение на карточках</span>
+    <div class="toggle on" data-toggle="glow"></div>
+  </div>
+</div>
+
+<footer>
+  <div data-i18n="footer.copy">© 2026 YURA_DEV — Все права защищены</div>
+  <div class="socials">
+    <a href="https://t.me/ArishaBii" target="_blank"><img src="images/icons/telegram.svg" alt=""> Telegram</a>
+    <a href="https://github.com/NekitTRF" target="_blank"><img src="images/icons/github.svg" alt=""> GitHub</a>
+    <a href="#" data-copy="nekit19980@gmail.com"><img src="images/icons/email.svg" alt=""> Email</a>
+  </div>
+</footer>
+
+<script src="js/preloader.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/glow.js"></script>
+<script src="js/terminal.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/form.js"></script>
+<script src="js/copy.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/snake.js"></script>
+
+</body>
+</html>

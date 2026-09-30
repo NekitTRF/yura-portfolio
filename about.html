@@ -1,0 +1,240 @@
+﻿<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Обо мне — Юра</title>
+<meta name="description" content="Юра — разработчик из Коломны. Учусь в Аграрном колледже им. Н. Т. Козлова. Python, JavaScript, C++, локальные ИИ.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://yura-dev.netlify.app/images/og-preview.jpg">
+<meta property="og:site_name" content="YURA_DEV">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://yura-dev.netlify.app/images/og-preview.jpg">
+<meta property="og:title" content="Обо мне — Юра">
+<meta property="og:description" content="Юра — разработчик из Коломны. Учусь в Аграрном колледже им. Н. Т. Козлова. Python, JavaScript, C++, локальные ИИ.">
+<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="manifest" href="images/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<style>
+  .about-hero {
+    max-width: 1300px;
+    margin: auto;
+    padding: 60px 60px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    align-items: center;
+  }
+  .about-text h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 28px;
+    color: var(--text);
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .about-text h1 span { color: var(--accent); }
+  .about-text p {
+    color: var(--text-dim);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+  .about-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .about-list li {
+    color: var(--text-dim);
+    font-size: 15px;
+    line-height: 1.8;
+    padding-left: 26px;
+    position: relative;
+  }
+  .about-list li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+  }
+  @media (max-width: 800px) {
+    .about-hero { grid-template-columns: 1fr; padding: 40px 22px; }
+    .about-text h1 { font-size: 18px; }
+  }
+</style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(113225520, "init", {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer"});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/113225520" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+
+
+
+<header>
+  <a href="index.html" class="logo">YURA<span>_DEV</span></a>
+  <nav id="mainNav">
+    <a href="index.html" class="nav-item" data-i18n="nav.home">Главная</a>
+    <div class="nav-item">
+      <a href="projects.html" class="nav-link" data-i18n="nav.projects">Проекты</a>
+      <div class="dropdown">
+        <a href="project-1.html" data-i18n="project.1">Alpha Browser</a>
+        <a href="project-2.html" data-i18n="project.2">Ten Assistant</a>
+        <a href="project-3.html" data-i18n="project.3">Marketplace Simulator</a>
+        <a href="project-4.html" data-i18n="project.4">AI Auto-Responder Bot</a>
+        <a href="project-5.html" data-i18n="project.5">Physics Tests</a>
+        <a href="project-6.html" data-i18n="project.6">Telegram Chat Analyzer</a>
+        <a href="project-7.html" data-i18n="project.7">Telegram Channel Bots</a>
+        <a href="project-8.html" data-i18n="project.8">Portfolio Website</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="stories.html" class="nav-link" data-i18n="nav.stories">Истории</a>
+      <div class="dropdown">
+        <a href="story-1.html" data-i18n="story.1">Первая попытка</a>
+        <a href="story-2.html" data-i18n="story.2">Империя, которая не выросла</a>
+        <a href="story-3.html" data-i18n="story.3">2025 год. Мой путь в колледж</a>
+        <a href="story-4.html" data-i18n="story.4">Почему я сделал Альфу</a>
+      </div>
+    </div>
+    <a href="gallery.html" class="nav-item" data-i18n="nav.gallery">Галерея</a>
+    <a href="about.html" class="nav-item active" data-i18n="nav.about">Обо мне</a>
+    <a href="contact.html" class="nav-item" data-i18n="nav.contact">Контакты</a>
+  </nav>
+<div class="nav-actions">
+  <button class="icon-btn" id="themeToggle" title="Сменить тему">☾</button>
+  <button class="icon-btn" id="langToggle" title="Сменить язык">RU</button>
+  <button class="icon-btn" id="settingsBtn" title="Настройки">⚙</button>
+  <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+</div>
+</header>
+
+<section class="about-hero">
+<div class="about-photo reveal">
+  <img src="images/avatar.jpg" alt="Юра">
+</div>
+  <div class="about-text">
+    <h1 class="reveal d-1"><span data-i18n="page.about.title">Обо</span> <span data-i18n="page.about.title.accent">мне</span></h1>
+    <p class="reveal d-2" data-i18n="page.about.p1">Меня зовут Юра. Я разработчик из Коломны, учусь в Аграрном колледже имени Н. Т. Козлова. Пишу на Python, JavaScript и C++.</p>
+    <p class="reveal d-3" data-i18n="page.about.p2">Начал программировать в 2024 году с простых скриптов на Python. Сейчас делаю более серьёзные проекты: от Telegram-ботов до веб-сайтов. Всё, что умею — выучил сам, через практику и ошибки.</p>
+    <p class="reveal d-4" data-i18n="page.about.p3">Люблю чистый код, понятные интерфейсы и задачи, которые заставляют думать. Веду этот сайт, чтобы показывать свои работы и делиться историями.</p>
+    <p class="reveal d-4" data-i18n="page.about.p4">Мне 16, и я учусь в колледже. Пишу код каждый день, пробую новое и делаю проекты, которые мне интересны. Верю, что лучший способ научиться — делать.</p>
+  </div>
+</section>
+
+<section class="section">
+<div class="section-head reveal">
+  <h2><span data-i18n="page.about.skills">Что я</span> <span data-i18n="page.about.skills.accent">умею</span></h2>
+</div>
+<div class="skills-grid reveal">
+  <div class="skill">
+    <div class="skill-head"><span class="skill-name">Python</span><span class="skill-percent" data-target="90">0%</span></div>
+    <div class="skill-bar"><div class="skill-fill" data-percent="90"></div></div>
+  </div>
+  <div class="skill">
+    <div class="skill-head"><span class="skill-name">JavaScript</span><span class="skill-percent" data-target="80">0%</span></div>
+    <div class="skill-bar"><div class="skill-fill" data-percent="80"></div></div>
+  </div>
+  <div class="skill">
+    <div class="skill-head"><span class="skill-name">HTML / CSS</span><span class="skill-percent" data-target="85">0%</span></div>
+    <div class="skill-bar"><div class="skill-fill" data-percent="85"></div></div>
+  </div>
+  <div class="skill">
+    <div class="skill-head"><span class="skill-name">C++</span><span class="skill-percent" data-target="65">0%</span></div>
+    <div class="skill-bar"><div class="skill-fill" data-percent="65"></div></div>
+  </div>
+  <div class="skill">
+    <div class="skill-head"><span class="skill-name">Git</span><span class="skill-percent" data-target="70">0%</span></div>
+    <div class="skill-bar"><div class="skill-fill" data-percent="70"></div></div>
+  </div>
+  <div class="skill">
+    <div class="skill-head"><span class="skill-name">Linux</span><span class="skill-percent" data-target="60">0%</span></div>
+    <div class="skill-bar"><div class="skill-fill" data-percent="60"></div></div>
+  </div>
+  <div class="skill">
+    <div class="skill-head"><span class="skill-name">Electron</span><span class="skill-percent" data-target="65">0%</span></div>
+    <div class="skill-bar"><div class="skill-fill" data-percent="65"></div></div>
+  </div>
+  <div class="skill">
+    <div class="skill-head"><span class="skill-name">AI / ML</span><span class="skill-percent" data-target="70">0%</span></div>
+    <div class="skill-bar"><div class="skill-fill" data-percent="70"></div></div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-head reveal">
+  <h2><span data-i18n="page.about.facts">Немного</span> <span data-i18n="page.about.facts.accent">фактов</span></h2>
+</div>
+<ul class="about-list reveal">
+  <li data-i18n="fact.1">Дата рождения: 17 января 2010</li>
+  <li data-i18n="fact.2">Живу в Коломне, Россия</li>
+  <li data-i18n="fact.3">Учусь в Аграрном колледже им. Н. Т. Козлова (с 2025 года)</li>
+  <li data-i18n="fact.4">Пишу код с 2024 года</li>
+  <li data-i18n="fact.5">Основной стек: Python, JavaScript, C++</li>
+  <li data-i18n="fact.6">Работаю с локальными ИИ-моделями</li>
+  <li data-i18n="fact.7">Люблю тёмные темы интерфейсов (этот сайт — не исключение)</li>
+  <li data-i18n="fact.8">Открыт к предложениям о работе и сотрудничестве</li>
+</ul>
+</section>
+<div class="settings-panel" id="settingsPanel">
+  <div class="panel-head">
+    <div class="panel-title">⚙ НАСТРОЙКИ</div>
+    <button class="panel-close" id="closeSettings">✕</button>
+  </div>
+
+<div class="section-label">🎨 Курсор</div>
+<div class="options-grid cols-2">
+  <button class="opt" data-cursor="1">Точка + кольцо</button>
+  <button class="opt" data-cursor="2">Стрелка</button>
+  <button class="opt" data-cursor="3">Свечение</button>
+  <button class="opt" data-cursor="4">Прицел</button>
+  <button class="opt" data-cursor="off" style="grid-column: 1 / -1;">✕ Обычный</button>
+</div>
+
+  <div class="section-label">✨ Эффекты</div>
+  <div class="toggle-row">
+    <span>Свечение на карточках</span>
+    <div class="toggle on" data-toggle="glow"></div>
+  </div>
+</div>
+
+<footer>
+  <div data-i18n="footer.copy">© 2026 YURA_DEV — Все права защищены</div>
+  <div class="socials">
+    <a href="https://t.me/ArishaBii" target="_blank"><img src="images/icons/telegram.svg" alt=""> Telegram</a>
+    <a href="https://github.com/NekitTRF" target="_blank"><img src="images/icons/github.svg" alt=""> GitHub</a>
+    <a href="#" data-copy="nekit19980@gmail.com"><img src="images/icons/email.svg" alt=""> Email</a>
+  </div>
+</footer>
+
+<script src="js/preloader.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/glow.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/copy.js"></script>
+<script src="js/settings.js"></script>
+
+</body>
+</html>

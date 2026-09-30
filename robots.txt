@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yura-dev.netlify.app/sitemap.xml

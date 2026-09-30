@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Юра</title>
+<meta name="description" content="Страница не найдена. Похоже, ты потерялся.">
+<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="manifest" href="images/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<style>
+  .error-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+  }
+
+  .error-code {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 120px;
+    line-height: 1;
+    color: var(--accent);
+    text-shadow:
+      0 0 20px rgba(255,140,0,0.6),
+      0 0 40px rgba(255,140,0,0.3),
+      6px 6px 0 rgba(255,140,0,0.15);
+    margin-bottom: 20px;
+    animation: error-glitch 3s infinite;
+  }
+
+  @keyframes error-glitch {
+    0%, 90%, 100% { transform: translate(0, 0); }
+    92% { transform: translate(-3px, 2px); }
+    94% { transform: translate(3px, -2px); }
+    96% { transform: translate(-2px, -2px); }
+    98% { transform: translate(2px, 2px); }
+  }
+
+  .error-title {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 20px;
+    color: var(--text);
+    margin-bottom: 16px;
+    line-height: 1.6;
+  }
+
+  .error-title span { color: var(--accent-2); }
+
+  .error-text {
+    color: var(--text-dim);
+    font-size: 16px;
+    max-width: 500px;
+    margin-bottom: 36px;
+    line-height: 1.7;
+  }
+
+  .error-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .error-buttons .btn {
+    padding: 14px 30px;
+    background: linear-gradient(135deg, var(--accent), #ffaa00);
+    color: #14161f;
+    font-weight: 700;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(255,140,0,0.3);
+    font-size: 14px;
+    transition: 0.25s;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+  }
+
+  .error-buttons .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(255,140,0,0.5);
+  }
+
+  .error-buttons .btn-ghost {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid rgba(255,255,255,0.15);
+    box-shadow: none;
+  }
+
+  .error-buttons .btn-ghost:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    box-shadow: none;
+  }
+
+  .error-emoji {
+    font-size: 60px;
+    margin-bottom: 20px;
+    animation: error-float 3s ease-in-out infinite;
+  }
+
+  @keyframes error-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+
+  @media (max-width: 800px) {
+    .error-code { font-size: 70px; }
+    .error-title { font-size: 14px; }
+    .error-emoji { font-size: 44px; }
+  }
+</style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(113225520, "init", {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer"});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/113225520" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+</head>
+<body>
+
+<div id="preloader">
+  <div class="preloader-logo">YURA<span>_DEV</span></div>
+  <div class="preloader-bar">
+    <div class="preloader-bar-fill" id="preloaderFill"></div>
+  </div>
+  <div class="preloader-status" id="preloaderStatus">Загрузка...</div>
+</div>
+
+<div class="error-page">
+  <div class="error-code">404</div>
+  <div class="error-title">Потерялся, <span>друг</span>?</div>
+  <p class="error-text">Страница, которую ты ищешь, не существует. Возможно, ты перешёл по старой ссылке или ввёл неверный адрес.</p>
+  <div class="error-buttons">
+    <a href="index.html" class="btn">← На главную</a>
+    <a href="projects.html" class="btn btn-ghost">Смотреть проекты</a>
+  </div>
+</div>
+
+<script src="js/preloader.js"></script>
+<script src="js/main.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/glow.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/copy.js"></script>
+<script src="js/settings.js"></script>
+
+</body>
+</html>
