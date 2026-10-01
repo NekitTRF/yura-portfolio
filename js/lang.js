@@ -29,7 +29,7 @@
       'story.4': 'Почему я сделал Альфу',
 
       // ===== HERO =====
-      'hero.available': '● Доступен для проектов',
+      'hero.available': 'Доступен для проектов',
       'hero.city': '📍 Коломна, Россия',
       'hero.stack': '💻 Python · JS · C++',
       'hero.greeting': 'Привет, я',
@@ -398,6 +398,23 @@
       'snake.score': 'Счёт:',
       'snake.start': 'Заново',
       'snake.hint': 'Управление: стрелки на клавиатуре',
+      'hero.btn.resume': 'Скачать резюме',
+      'section.learning': 'Сейчас',
+'section.learning.accent': 'учу',
+'learn.reading.label': 'Читаю',
+'learn.reading.title': '«Посторонний»',
+'learn.reading.desc': 'Альбер Камю. Классика экзистенциализма — про абсурд и смысл.',
+'learn.study.label': 'Изучаю',
+'learn.study.title': 'Python',
+'learn.study.desc': 'Углубляюсь в язык: ООП, асинхронность, работа с API и базами данных.',
+'learn.college.label': 'В колледже',
+'learn.college.title': 'Системное администрирование',
+'learn.college.desc': 'Linux, сети, C++, SQL. Всё, что нужно для работы с серверами.',
+'learn.goal.label': 'Моя цель',
+'learn.goal.title': 'Стать крутым сисадмином',
+'learn.goal.desc': 'Хочу уметь всё: и сайт сделать, и серверы администрировать. Совмещать разработку с инфраструктурой.',
+'view.visits': 'просмотров',
+'footer.updated': 'Обновлено:',
       // ===== FOOTER =====
       'footer.copy': '© 2026 YURA_DEV — Все права защищены',
     },
@@ -428,7 +445,7 @@
       'story.4': 'Why I Built Alpha',
 
       // ===== HERO =====
-      'hero.available': '● Available for projects',
+      'hero.available': 'Available for projects',
       'hero.city': '📍 Kolomna, Russia',
       'hero.stack': '💻 Python · JS · C++',
       'hero.greeting': "Hi, I'm",
@@ -797,7 +814,24 @@
 'snake.score': 'Score:',
 'snake.start': 'Restart',
 'snake.hint': 'Controls: keyboard arrows',
-      // ===== FOOTER =====
+'hero.btn.resume': 'Download CV',
+'section.learning': 'Currently',
+'section.learning.accent': 'learning',
+'learn.reading.label': 'Reading',
+'learn.reading.title': '"The Stranger"',
+'learn.reading.desc': 'Albert Camus. Classic existentialism — about absurdity and meaning.',
+'learn.study.label': 'Studying',
+'learn.study.title': 'Python',
+'learn.study.desc': 'Deepening my knowledge: OOP, async, APIs, and databases.',
+'learn.college.label': 'At college',
+'learn.college.title': 'System Administration',
+'learn.college.desc': 'Linux, networks, C++, SQL. Everything needed to work with servers.',
+'learn.goal.label': 'My goal',
+'learn.goal.title': 'Become a great sysadmin',
+'learn.goal.desc': 'I want to do it all: build websites and administer servers. Combine development with infrastructure.',
+'view.visits': 'views',
+'footer.updated': 'Updated:',
+// ===== FOOTER =====
       'footer.copy': '© 2026 YURA_DEV — All rights reserved',
     }
   };

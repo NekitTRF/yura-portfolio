@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://yura-dev.netlify.app/sitemap.xml
+Sitemap: https://nekittrf.github.io/yura-portfolio/sitemap.xml

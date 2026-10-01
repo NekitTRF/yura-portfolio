@@ -6,10 +6,10 @@
 <title>Галерея — Юра</title>
 <meta name="description" content="Скриншоты проектов, фото с работы над кодом, атмосферные кадры. Галерея работ Юры.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://yura-dev.netlify.app/images/og-preview.jpg">
+<meta property="og:image" content="https://nekittrf.github.io/yura-portfolio/images/og-preview.jpg">
 <meta property="og:site_name" content="YURA_DEV">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yura-dev.netlify.app/images/og-preview.jpg">
+<meta name="twitter:image" content="https://nekittrf.github.io/yura-portfolio/images/og-preview.jpg">
 <meta property="og:title" content="Галерея — Юра">
 <meta property="og:description" content="Скриншоты проектов, фото с работы над кодом, атмосферные кадры. Галерея работ Юры.">
 <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
@@ -42,38 +42,6 @@
     aspect-ratio: 1;
     cursor: zoom-in;
   }
-
-  /* Лайтбокс */
-  .lightbox {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(10,10,10,0.95);
-    z-index: 9999;
-    align-items: center;
-    justify-content: center;
-    padding: 40px;
-    cursor: zoom-out;
-  }
-  .lightbox.open { display: flex; }
-  .lightbox img, .lightbox .lb-img {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 12px;
-    border: 2px solid var(--accent);
-    background:
-      linear-gradient(135deg, rgba(255,140,0,0.15), rgba(255,215,0,0.05)),
-      repeating-linear-gradient(45deg, #1a2038 0, #1a2038 12px, #161c30 12px, #161c30 24px);
-    width: 80vw;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255,140,0,0.7);
-    font-family: 'Press Start 2P', monospace;
-    font-size: 14px;
-  }
-
   @media (max-width: 1000px) { .gallery-full { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 800px) {
     .page-head { padding: 40px 22px 10px; }
@@ -81,7 +49,6 @@
     .gallery-full { grid-template-columns: repeat(2, 1fr); }
   }
 </style>
-<!-- Yandex.Metrika counter -->
 <script type="text/javascript">
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
@@ -92,7 +59,6 @@
    ym(113225520, "init", {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer"});
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/113225520" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </head>
 <body>
 
@@ -165,7 +131,16 @@
 </section>
 
 <div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lbClose" aria-label="Закрыть">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="18" y1="6" x2="6" y2="18"></line>
+      <line x1="6" y1="6" x2="18" y2="18"></line>
+    </svg>
+  </button>
+  <button class="lightbox-nav prev" id="lbPrev">‹</button>
   <img class="lb-img" id="lbImg" src="" alt="">
+  <button class="lightbox-nav next" id="lbNext">›</button>
+  <div class="lightbox-counter" id="lbCounter">1 / 1</div>
 </div>
 <div class="settings-panel" id="settingsPanel">
   <div class="panel-head">
@@ -190,7 +165,21 @@
 </div>
 
 <footer>
+  <nav class="footer-nav">
+    <a href="index.html" data-i18n="nav.home">Главная</a>
+    <a href="projects.html" data-i18n="nav.projects">Проекты</a>
+    <a href="stories.html" data-i18n="nav.stories">Истории</a>
+    <a href="gallery.html" data-i18n="nav.gallery">Галерея</a>
+    <a href="about.html" data-i18n="nav.about">Обо мне</a>
+    <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+  </nav>
   <div data-i18n="footer.copy">© 2026 YURA_DEV — Все права защищены</div>
+<div class="last-update">
+  <span data-i18n="footer.updated">Обновлено:</span> <span id="lastUpdate">—</span>
+</div>
+  <a href="https://hits.sh/nekittrf.github.io/yura-portfolio/" target="_blank" rel="noopener" class="view-counter" title="Счётчик посещений">
+    <img src="https://hits.sh/nekittrf.github.io/yura-portfolio.svg?style=flat-square&label=visits&color=ff8c00&labelColor=14161f" alt="Visits">
+  </a>
   <div class="socials">
     <a href="https://t.me/ArishaBii" target="_blank"><img src="images/icons/telegram.svg" alt=""> Telegram</a>
     <a href="https://github.com/NekitTRF" target="_blank"><img src="images/icons/github.svg" alt=""> GitHub</a>
@@ -208,24 +197,79 @@
 <script>
 const lb = document.getElementById('lightbox');
 const lbImg = document.getElementById('lbImg');
-document.querySelectorAll('.gallery-item').forEach(item => {
-  item.addEventListener('click', () => {
-    const img = item.querySelector('img');
-    if (img) {
-      lbImg.src = img.src;
-      lbImg.alt = img.alt || '';
-    }
-    lb.classList.add('open');
-  });
+const lbCounter = document.getElementById('lbCounter');
+const lbPrev = document.getElementById('lbPrev');
+const lbNext = document.getElementById('lbNext');
+const lbClose = document.getElementById('lbClose');
+const items = Array.from(document.querySelectorAll('.gallery-item'));
+let currentIndex = 0;
+
+function openLightbox(index) {
+  currentIndex = index;
+  updateLightbox();
+  lb.classList.add('open');
+}
+
+function updateLightbox() {
+  const img = items[currentIndex].querySelector('img');
+  if (img) {
+    lbImg.src = img.src;
+    lbImg.alt = img.alt || '';
+  }
+  lbCounter.textContent = (currentIndex + 1) + ' / ' + items.length;
+}
+
+function nextImage() {
+  currentIndex = (currentIndex + 1) % items.length;
+  updateLightbox();
+}
+
+function prevImage() {
+  currentIndex = (currentIndex - 1 + items.length) % items.length;
+  updateLightbox();
+}
+
+function closeLightbox() {
+  lb.classList.remove('open');
+}
+
+items.forEach((item, i) => {
+  item.addEventListener('click', () => openLightbox(i));
 });
-lb.addEventListener('click', () => lb.classList.remove('open'));
+
+lbNext.addEventListener('click', (e) => { e.stopPropagation(); nextImage(); });
+lbPrev.addEventListener('click', (e) => { e.stopPropagation(); prevImage(); });
+lbClose.addEventListener('click', closeLightbox);
+lbImg.addEventListener('click', closeLightbox);
 
 document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') lb.classList.remove('open');
+  if (!lb.classList.contains('open')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowRight') nextImage();
+  if (e.key === 'ArrowLeft') prevImage();
+});
+
+// Свайпы на телефоне
+let touchStartX = 0;
+let touchEndX = 0;
+
+lb.addEventListener('touchstart', (e) => {
+  touchStartX = e.changedTouches[0].screenX;
+});
+
+lb.addEventListener('touchend', (e) => {
+  touchEndX = e.changedTouches[0].screenX;
+  const diff = touchStartX - touchEndX;
+  if (Math.abs(diff) > 50) {
+    if (diff > 0) nextImage();
+    else prevImage();
+  }
 });
 </script>
 <script src="js/copy.js"></script>
 <script src="js/settings.js"></script>
+<script src="js/scrolltop.js"></script>
+<script src="js/lastupdate.js"></script>
 
 </body>
 </html>

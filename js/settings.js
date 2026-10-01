@@ -135,7 +135,7 @@ function bindHover(onOver, onOut) {
       const onOut = e => {
         if (e.target.closest(hoverTargets)) arrow.classList.remove('hover');
       };
-      bindHover([arrow], onOver, onOut);
+      bindHover(onOver, onOut);
 
       function loop() {
         ax += (mx - ax) * 0.9;

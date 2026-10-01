@@ -6,10 +6,10 @@
 <title>Portfolio Website — Юра</title>
 <meta name="description" content="Личное портфолио с частицами, терминалом с физикой букв, темной/светлой темой и переключателем RU/EN. Написано с нуля.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://yura-dev.netlify.app/images/og-preview.jpg">
+<meta property="og:image" content="https://nekittrf.github.io/yura-portfolio/images/og-preview.jpg">
 <meta property="og:site_name" content="YURA_DEV">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yura-dev.netlify.app/images/og-preview.jpg">
+<meta name="twitter:image" content="https://nekittrf.github.io/yura-portfolio/images/og-preview.jpg">
 <meta property="og:title" content="Portfolio Website — Юра">
 <meta property="og:description" content="Личное портфолио с частицами, терминалом с физикой букв, темной/светлой темой и переключателем RU/EN. Написано с нуля.">
 <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
@@ -236,7 +236,21 @@
 </div>
 
 <footer>
+  <nav class="footer-nav">
+    <a href="index.html" data-i18n="nav.home">Главная</a>
+    <a href="projects.html" data-i18n="nav.projects">Проекты</a>
+    <a href="stories.html" data-i18n="nav.stories">Истории</a>
+    <a href="gallery.html" data-i18n="nav.gallery">Галерея</a>
+    <a href="about.html" data-i18n="nav.about">Обо мне</a>
+    <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+  </nav>
   <div data-i18n="footer.copy">© 2026 YURA_DEV — Все права защищены</div>
+<div class="last-update">
+  <span data-i18n="footer.updated">Обновлено:</span> <span id="lastUpdate">—</span>
+</div>
+  <a href="https://hits.sh/nekittrf.github.io/yura-portfolio/" target="_blank" rel="noopener" class="view-counter" title="Счётчик посещений">
+    <img src="https://hits.sh/nekittrf.github.io/yura-portfolio.svg?style=flat-square&label=visits&color=ff8c00&labelColor=14161f" alt="Visits">
+  </a>
   <div class="socials">
     <a href="https://t.me/ArishaBii" target="_blank"><img src="images/icons/telegram.svg" alt=""> Telegram</a>
     <a href="https://github.com/NekitTRF" target="_blank"><img src="images/icons/github.svg" alt=""> GitHub</a>
@@ -253,6 +267,8 @@
 <script src="js/lang.js"></script>
 <script src="js/copy.js"></script>
 <script src="js/settings.js"></script>
+<script src="js/scrolltop.js"></script>
+<script src="js/lastupdate.js"></script>
 
 </body>
 </html>
