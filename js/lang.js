@@ -21,6 +21,7 @@
       'project.6': 'Telegram Chat Analyzer',
       'project.7': 'Telegram Channel Bots',
       'project.8': 'Portfolio Website',
+      'project.9': 'FLUX Assistant',
 
       // ===== STORIES DROPDOWN =====
       'story.1': 'Первая попытка',
@@ -67,12 +68,12 @@
       'work.p1.cat': 'Electron · JS',
       'work.p1.title': 'Alpha Browser',
       'work.p1.desc': 'Свой браузер на Electron: вкладки, история поиска, загрузки, кастомизация интерфейса. Полностью под моим контролем — ничего не сливает.',
-      'work.p2.cat': 'Python · AI',
-      'work.p2.title': 'Ten Assistant',
-      'work.p2.desc': 'Настольный помощник с локальным ИИ: открывает приложения, работает с папками, пишет в Telegram от лица бота. Помнит контекст, модель можно заменить.',
-      'work.p3.cat': 'HTML · CSS · JS',
-      'work.p3.title': 'Marketplace Simulator',
-      'work.p3.desc': 'Веб-сайт в стиле DNS: каталог товаров, корзина, регистрация и вход с паролем. Полноценный интернет-магазин — только для себя.',
+      'work.p6.cat': 'Python',
+      'work.p6.title': 'Telegram Chat Analyzer',
+      'work.p6.desc': 'Локальный скрипт для анализа ТГ-чатов: топ флудеров, медиа, слова, HTML-отчёт.',
+      'work.p9.cat': 'Python · JS',
+      'work.p9.title': 'FLUX Assistant',
+      'work.p9.desc': 'Десктопный ассистент для Windows с системой плагинов и управлением компьютером через чат.',
 
       // ===== STORIES PREVIEW =====
       'story.prev.1.date': '2023-2024',
@@ -93,8 +94,8 @@
 
       // ===== NOW WORKING =====
       'now.cat': '● Сейчас работаю над',
-      'now.title': 'Сайт-портфолио (этот сайт)',
-      'now.desc': 'Собираю личный сайт-портфолио с интерактивами, тёмной темой и переключателем языка. Делаю всё сам: HTML, CSS, JS.',
+      'now.title': 'FLUX — десктопный ассистент',
+      'now.desc': 'Создаю систему с открытой архитектурой плагинов для управления компьютером через чат. Бэкенд на Python, интерфейс на JS, аватар с эмоциями.',
 
       // ===== FAQ =====
       'faq.q1': 'Кто ты и чем занимаешься?',
@@ -400,14 +401,14 @@
       'snake.hint': 'Управление: стрелки на клавиатуре',
       'hero.btn.resume': 'Скачать резюме',
       'section.learning': 'Сейчас',
-'section.learning.accent': 'учу',
-'learn.reading.label': 'Читаю',
-'learn.reading.title': '«Посторонний»',
-'learn.reading.desc': 'Альбер Камю. Классика экзистенциализма — про абсурд и смысл.',
-'learn.study.label': 'Изучаю',
-'learn.study.title': 'Python',
-'learn.study.desc': 'Углубляюсь в язык: ООП, асинхронность, работа с API и базами данных.',
-'learn.college.label': 'В колледже',
+      'section.learning.accent': 'учу',
+      'learn.reading.label': 'Читаю',
+      'learn.reading.title': '«Посторонний»',
+      'learn.reading.desc': 'Альбер Камю. Классика экзистенциализма — про абсурд и смысл.',
+      'learn.study.label': 'Изучаю',
+      'learn.study.title': 'Python',
+      'learn.study.desc': 'Углубляюсь в язык: ООП, асинхронность, работа с API и базами данных.',
+      'learn.college.label': 'В колледже',
 'learn.college.title': 'Системное администрирование',
 'learn.college.desc': 'Linux, сети, C++, SQL. Всё, что нужно для работы с серверами.',
 'learn.goal.label': 'Моя цель',
@@ -415,11 +416,23 @@
 'learn.goal.desc': 'Хочу уметь всё: и сайт сделать, и серверы администрировать. Совмещать разработку с инфраструктурой.',
 'view.visits': 'просмотров',
 'footer.updated': 'Обновлено:',
-      // ===== FOOTER =====
-      'footer.copy': '© 2026 YURA_DEV — Все права защищены',
+// ===== PROJECT 9 =====
+'project.9.about.text': 'FLUX — это десктопный ассистент для Windows с аватаром из символов и встроенным чатом. Бэкенд написан на Python 3 (только стандартная библиотека), а интерфейс — на JS. Главная фишка — модульная архитектура, где плагины подключаются автоматически и могут управлять компьютером, сетью, программами и даже другими устройствами.',
+'project.9.why.text': 'Я хотел создать не просто чат-бота, а реального помощника, который живет на компьютере и понимает команды. И чтобы это было не тяжелое приложение, а легкая система, которую можно расширять своими плагинами за пару минут.',
+'project.9.features.1': 'Управление компьютером: открытие программ, работа с окнами, блокировка',
+'project.9.features.2': 'Диагностика сети с умными решениями (сброс DNS, обновление IP)',
+'project.9.features.3': 'Мониторинг системы (диск, CPU, батарея) с фоновыми уведомлениями',
+'project.9.features.4': 'Голосовой ввод и озвучка ответов',
+'project.9.features.5': 'Удаленное управление другим ПК через мастер-агент',
+'project.9.features.6': 'Система плагинов: любой может написать модуль на Python',
+'project.9.features.7': 'Умная система эмоций для аватара',
+'project.9.how.text': 'Пользователь пишет в чат → сервер прогоняет текст через хуки и команды плагинов → если ничего не подошло, работает fallback (например, поиск в интернете или локальный ИИ). Плагины могут сами писать в чат, работать в фоне и держать свои серверы. Ядро написано так, чтобы любой плагин можно было добавить одним файлом.',
+'project.9.code.comment': '# Пример простого плагина для FLUX',
+// ===== FOOTER =====
+'footer.copy': '© 2026 YURA_DEV — Все права защищены',
     },
 
-    en: {
+en: {
       // ===== NAV =====
       'nav.home': 'Home',
       'nav.projects': 'Projects',
@@ -437,6 +450,7 @@
       'project.6': 'Telegram Chat Analyzer',
       'project.7': 'Telegram Channel Bots',
       'project.8': 'Portfolio Website',
+      'project.9': 'FLUX Assistant',
 
       // ===== STORIES DROPDOWN =====
       'story.1': 'First Attempt',
@@ -483,12 +497,12 @@
       'work.p1.cat': 'Electron · JS',
       'work.p1.title': 'Alpha Browser',
       'work.p1.desc': 'Custom Electron browser: tabs, search history, downloads, UI customization. Fully under my control — no data leaks.',
-      'work.p2.cat': 'Python · AI',
-      'work.p2.title': 'Ten Assistant',
-      'work.p2.desc': 'Desktop assistant with local AI: opens apps, works with folders, sends Telegram messages as a bot. Remembers context, model is swappable.',
-      'work.p3.cat': 'HTML · CSS · JS',
-      'work.p3.title': 'Marketplace Simulator',
-      'work.p3.desc': 'DNS-style web shop: product catalog, cart, sign up with password. A full marketplace — just for myself.',
+      'work.p6.cat': 'Python',
+      'work.p6.title': 'Telegram Chat Analyzer',
+      'work.p6.desc': 'Local script for Telegram chat analysis: top posters, media, words, HTML report.',
+      'work.p9.cat': 'Python · JS',
+      'work.p9.title': 'FLUX Assistant',
+      'work.p9.desc': 'Desktop assistant for Windows with a plugin system and PC control via chat.',
 
       // ===== STORIES PREVIEW =====
       'story.prev.1.date': '2023-2024',
@@ -509,9 +523,8 @@
 
       // ===== NOW WORKING =====
       'now.cat': '● Currently working on',
-      'now.title': 'Portfolio Website (this site)',
-      'now.desc': 'Building my personal portfolio with interactives, dark theme, and language switcher. Doing everything myself: HTML, CSS, JS.',
-
+      'now.title': 'FLUX — desktop assistant',
+      'now.desc': 'Building a system with an open plugin architecture to control the PC via chat. Python backend, JS interface, avatar with emotions.',
       // ===== FAQ =====
       'faq.q1': 'Who are you and what do you do?',
       'faq.a1': "I'm Yura, a developer from Kolomna. I code in Python, JavaScript, and C++. Studying at Agrarian College named after N. T. Kozlov. I build projects of different scales: from bots to browsers.",
@@ -831,6 +844,18 @@
 'learn.goal.desc': 'I want to do it all: build websites and administer servers. Combine development with infrastructure.',
 'view.visits': 'views',
 'footer.updated': 'Updated:',
+// ===== PROJECT 9 =====
+'project.9.about.text': 'FLUX is a desktop assistant for Windows with a character-based avatar and built-in chat. The backend is written in Python 3 (standard library only), and the interface in JS. The main feature is a modular architecture where plugins connect automatically and can control the computer, network, programs, and even other devices.',
+'project.9.why.text': "I wanted to create not just a chatbot, but a real assistant that lives on the computer and understands commands. And I wanted it to be a lightweight system that can be extended with custom plugins in minutes, not a heavy app.",
+'project.9.features.1': 'PC control: open programs, manage windows, lock',
+'project.9.features.2': 'Network diagnostics with smart fixes (DNS flush, IP renew)',
+'project.9.features.3': 'System monitoring (disk, CPU, battery) with background notifications',
+'project.9.features.4': 'Voice input and text-to-speech replies',
+'project.9.features.5': 'Remote control of another PC via master-agent',
+'project.9.features.6': 'Plugin system: anyone can write a Python module',
+'project.9.features.7': 'Smart emotion system for the avatar',
+'project.9.how.text': 'User types in chat → server runs text through hooks and plugin commands → if nothing matches, fallback works (e.g., web search or local AI). Plugins can write to chat themselves, run in background, and host their own servers. The core is designed so any plugin can be added with a single file.',
+'project.9.code.comment': '# Example of a simple FLUX plugin',
 // ===== FOOTER =====
       'footer.copy': '© 2026 YURA_DEV — All rights reserved',
     }

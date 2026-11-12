@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FLUX — Юра</title>
+<meta name="description" content="FLUX — десктопный ассистент для Windows с открытой архитектурой плагинов. Управление компьютером, сетью и программами через чат.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://nekittrf.github.io/yura-portfolio/images/og-preview.jpg">
+<meta property="og:site_name" content="YURA_DEV">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://nekittrf.github.io/yura-portfolio/images/og-preview.jpg">
+<meta property="og:title" content="FLUX — Юра">
+<meta property="og:description" content="FLUX — десктопный ассистент для Windows с открытой архитектурой плагинов.">
+<link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="manifest" href="images/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+<style>
+  .project-hero { max-width: 1100px; margin: auto; padding: 60px 60px 40px; }
+  .back-link { color: var(--accent); text-decoration: none; font-size: 13px; font-weight: 600; display: inline-block; margin-bottom: 24px; }
+  .back-link:hover { text-decoration: underline; }
+  .project-hero h1 { font-family: 'Press Start 2P', monospace; font-size: 28px; color: var(--text); line-height: 1.6; margin-bottom: 20px; }
+  .project-meta { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 30px; }
+  .project-cat { display: inline-block; padding: 6px 14px; background: rgba(255,140,0,0.1); border: 1px solid var(--border-accent); border-radius: 20px; color: var(--accent); font-size: 12px; font-weight: 600; }
+  .project-date { display: inline-block; padding: 6px 14px; background: var(--bg-2); border: 1px solid var(--border); border-radius: 20px; color: var(--text-muted); font-size: 12px; font-weight: 600; }
+  .project-image { max-width: 1100px; margin: 0 auto 40px; padding: 0 60px; }
+    .project-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+    border: 1px solid var(--border-accent);
+    background: var(--bg-2);
+  }
+  .project-content { max-width: 900px; margin: auto; padding: 0 60px 80px; }
+  .project-content h2 { font-family: 'Press Start 2P', monospace; font-size: 18px; color: var(--text); margin: 40px 0 18px; }
+  .project-content h2 span { color: var(--accent); }
+  .project-content p { color: var(--text-dim); font-size: 16px; line-height: 1.8; margin-bottom: 18px; }
+  .project-content ul { color: var(--text-dim); font-size: 16px; line-height: 1.8; padding-left: 24px; margin-bottom: 18px; }
+  .project-content li { margin-bottom: 8px; }
+  .project-content code { background: var(--bg-2); border: 1px solid var(--border); padding: 3px 8px; border-radius: 6px; font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--accent-2); }
+  .project-code { background: #0a0a0a; border: 1px solid #1f2a1f; border-radius: 12px; padding: 20px 24px; font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.7; color: #7dff5c; overflow-x: auto; margin: 20px 0; box-shadow: 0 0 30px rgba(0,255,0,0.06); }
+  .project-code .kw { color: #ff8c00; }
+  .project-code .str { color: #ffd700; }
+  .project-code .cm { color: #4a7a4a; }
+  .project-links { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 30px; }
+  .soon-badge { display: inline-block; padding: 14px 30px; background: var(--bg-2); border: 1px dashed var(--border-accent); color: var(--text-muted); font-size: 13px; border-radius: 10px; font-style: italic; }
+  @media (max-width: 800px) {
+    .project-hero, .project-image, .project-content { padding-left: 22px; padding-right: 22px; }
+    .project-hero h1 { font-size: 18px; }
+    .project-content h2 { font-size: 14px; }
+  }
+</style>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(113225520, "init", {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer"});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/113225520" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">YURA<span>_DEV</span></a>
+  <nav id="mainNav">
+    <a href="index.html" class="nav-item" data-i18n="nav.home">Главная</a>
+    <div class="nav-item">
+      <a href="projects.html" class="nav-link" data-i18n="nav.projects">Проекты</a>
+      <div class="dropdown">
+        <a href="project-1.html" data-i18n="project.1">Alpha Browser</a>
+        <a href="project-2.html" data-i18n="project.2">Ten Assistant</a>
+        <a href="project-3.html" data-i18n="project.3">Marketplace Simulator</a>
+        <a href="project-4.html" data-i18n="project.4">AI Auto-Responder Bot</a>
+        <a href="project-5.html" data-i18n="project.5">Physics Tests</a>
+        <a href="project-6.html" data-i18n="project.6">Telegram Chat Analyzer</a>
+        <a href="project-7.html" data-i18n="project.7">Telegram Channel Bots</a>
+        <a href="project-8.html" data-i18n="project.8">Portfolio Website</a>
+        <a href="project-9.html" data-i18n="project.9">FLUX Assistant</a>
+      </div>
+    </div>
+    <div class="nav-item">
+      <a href="stories.html" class="nav-link" data-i18n="nav.stories">Истории</a>
+      <div class="dropdown">
+        <a href="story-1.html" data-i18n="story.1">Первая попытка</a>
+        <a href="story-2.html" data-i18n="story.2">Империя, которая не выросла</a>
+        <a href="story-3.html" data-i18n="story.3">2025 год. Мой путь в колледж</a>
+        <a href="story-4.html" data-i18n="story.4">Почему я сделал Альфу</a>
+      </div>
+    </div>
+    <a href="gallery.html" class="nav-item" data-i18n="nav.gallery">Галерея</a>
+    <a href="about.html" class="nav-item" data-i18n="nav.about">Обо мне</a>
+    <a href="contact.html" class="nav-item" data-i18n="nav.contact">Контакты</a>
+  </nav>
+<div class="nav-actions">
+  <button class="icon-btn" id="themeToggle" title="Сменить тему">☾</button>
+  <button class="icon-btn" id="langToggle" title="Сменить язык">RU</button>
+  <button class="icon-btn" id="settingsBtn" title="Настройки">⚙</button>
+  <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+</div>
+</header>
+
+<section class="project-hero">
+  <a href="projects.html" class="back-link" data-i18n="project.back">← Все проекты</a>
+  <h1 data-i18n="work.p9.title">FLUX Assistant</h1>
+  <div class="project-meta">
+    <span class="project-cat" data-i18n="work.p9.cat">Python · JS</span>
+    <span class="project-date">В разработке</span>
+    <span class="project-date" data-i18n="project.type.personal">Личный проект</span>
+  </div>
+</section>
+
+<section class="project-image">
+  <img src="images/works/work-09.jpg" alt="FLUX Assistant">
+</section>
+
+<section class="project-content">
+
+<h2><span data-i18n="project.about">О</span> <span data-i18n="project.about.accent">проекте</span></h2>
+<p>FLUX — это десктопный ассистент для Windows с аватаром из символов и встроенным чатом. Бэкенд написан на Python 3 (только стандартная библиотека), а интерфейс — на JS. Главная фишка — модульная архитектура, где плагины подключаются автоматически и могут управлять компьютером, сетью, программами и даже другими устройствами.</p>
+
+<h2><span data-i18n="project.why">Зачем</span> <span data-i18n="project.why.accent">я его сделал</span></h2>
+<p>Я хотел создать не просто чат-бота, а реального помощника, который живет на компьютере и понимает команды. И чтобы это было не тяжелое приложение, а легкая система, которую можно расширять своими плагинами за пару минут.</p>
+
+<h2><span data-i18n="project.features">Что</span> <span data-i18n="project.features.accent">умеет</span></h2>
+<ul>
+  <li data-i18n="project.9.features.1">Управление компьютером: открытие программ, работа с окнами, блокировка</li>
+  <li data-i18n="project.9.features.2">Диагностика сети с умными решениями (сброс DNS, обновление IP)</li>
+  <li data-i18n="project.9.features.3">Мониторинг системы (диск, CPU, батарея) с фоновыми уведомлениями</li>
+  <li data-i18n="project.9.features.4">Голосовой ввод и озвучка ответов</li>
+  <li data-i18n="project.9.features.5">Удаленное управление другим ПК через мастер-агент</li>
+  <li data-i18n="project.9.features.6">Система плагинов: любой может написать модуль на Python</li>
+  <li data-i18n="project.9.features.7">Умная система эмоций для аватара</li>
+</ul>
+
+<h2><span data-i18n="project.how">Как</span> <span data-i18n="project.how.accent">работает</span></h2>
+<p>Пользователь пишет в чат → сервер прогоняет текст через хуки и команды плагинов → если ничего не подошло, работает fallback (например, поиск в интернете или локальный ИИ). Плагины могут сами писать в чат, работать в фоне и держать свои серверы. Ядро написано так, чтобы любой плагин можно было добавить одним файлом.</p>
+
+<h2><span data-i18n="project.code">Фрагмент</span> <span data-i18n="project.code.accent">кода</span></h2>
+<div class="project-code">
+<span class="cm"># Пример простого плагина для FLUX</span>
+<span class="kw">def</span> register(api):
+    <span class="kw">def</span> hello(c):
+        <span class="kw">return</span> {<span class="str">"text"</span>: <span class="str">"Привет, я FLUX!"</span>, <span class="str">"emotion"</span>: <span class="str">"happy"</span>}
+    
+    api.command(<span class="str">r"^привет$"</span>, hello, <span class="str">"привет — поздороваться"</span>)
+</div>
+
+<h2 data-i18n="project.links">Ссылки</h2>
+<div class="project-links">
+  <span class="soon-badge" data-i18n="project.soon">Репозиторий скоро появится</span>
+</div>
+
+</section>
+<div class="settings-panel" id="settingsPanel">
+  <div class="panel-head">
+    <div class="panel-title">⚙ НАСТРОЙКИ</div>
+    <button class="panel-close" id="closeSettings">✕</button>
+  </div>
+
+<div class="section-label">🎨 Курсор</div>
+<div class="options-grid cols-2">
+  <button class="opt" data-cursor="1">Точка + кольцо</button>
+  <button class="opt" data-cursor="2">Стрелка</button>
+  <button class="opt" data-cursor="3">Свечение</button>
+  <button class="opt" data-cursor="4">Прицел</button>
+  <button class="opt" data-cursor="off" style="grid-column: 1 / -1;">✕ Обычный</button>
+</div>
+
+  <div class="section-label">✨ Эффекты</div>
+  <div class="toggle-row">
+    <span>Свечение на карточках</span>
+    <div class="toggle on" data-toggle="glow"></div>
+  </div>
+</div>
+
+<footer>
+  <nav class="footer-nav">
+    <a href="index.html" data-i18n="nav.home">Главная</a>
+    <a href="projects.html" data-i18n="nav.projects">Проекты</a>
+    <a href="stories.html" data-i18n="nav.stories">Истории</a>
+    <a href="gallery.html" data-i18n="nav.gallery">Галерея</a>
+    <a href="about.html" data-i18n="nav.about">Обо мне</a>
+    <a href="contact.html" data-i18n="nav.contact">Контакты</a>
+  </nav>
+  <div data-i18n="footer.copy">© 2026 YURA_DEV — Все права защищены</div>
+<div class="last-update">
+  <span data-i18n="footer.updated">Обновлено:</span> <span id="lastUpdate">—</span>
+</div>
+  <a href="https://hits.sh/nekittrf.github.io/yura-portfolio/" target="_blank" rel="noopener" class="view-counter" title="Счётчик посещений">
+    <img src="https://hits.sh/nekittrf.github.io/yura-portfolio.svg?style=flat-square&label=visits&color=ff8c00&labelColor=14161f" alt="Visits">
+  </a>
+  <div class="socials">
+    <a href="https://t.me/ArishaBii" target="_blank"><img src="images/icons/telegram.svg" alt=""> Telegram</a>
+    <a href="https://github.com/NekitTRF" target="_blank"><img src="images/icons/github.svg" alt=""> GitHub</a>
+    <a href="#" data-copy="nekit19980@gmail.com"><img src="images/icons/email.svg" alt=""> Email</a>
+  </div>
+</footer>
+
+<script src="js/preloader.js"></script>
+<script src="js/main.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/glow.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/lang.js"></script>
+<script src="js/copy.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/scrolltop.js"></script>
+<script src="js/lastupdate.js"></script>
+
+</body>
+</html>
